@@ -1,0 +1,27 @@
+html {
+--text: #000000;
+--background: #ffffff;
+--primary: #000000;
+--secondary: #9c9c9c;
+--accent: #595959;
+}
+
+body {
+    color: var(--text);
+background:VAR(--background);
+font-family:"texturina";
+}
+
+h1 {
+    color: var(--primary);
+    font-family:"metal mania";
+}
+
+h2{
+    color:var(--primary);
+    font-family:"metal mania";
+} 
+
+h3{
+    color:var(--accent)
+}

@@ -7,6 +7,7 @@ html {
 }
 
 body {
+    font-size: 15px;
     color: var(--text);
 background:VAR(--background);
 font-family:"texturina";
@@ -15,22 +16,33 @@ font-family:"texturina";
 h1 {
     color: var(--primary);
     font-family:"metal mania";
+    font-size: 100px;
 }
-
 h2{
+    font-size:50px;
     color:var(--secondary);
-    font-family:"metal mania";
+    font-family:"metal mania";  
 } 
 
 h3{
+    font-size:40px;
     color:var(--accent);
+}
+
+h4{
+    font-size: 30px;
+    color: var(--accent);
+    text-decoration: underline;
 }
 
 li{
     color:var(--secondary);
     font-weight: bold;
-    font-size: large;
+    font-size: 25px;
 }
+
 a:link{
+    font-size: 20px;
     color: goldenrod;
 }
+

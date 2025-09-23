@@ -1,9 +1,9 @@
 html {
---text: #000000;
---background: #ffffff;
---primary: #000000;
---secondary: #9c9c9c;
---accent: #595959;
+--text: #969696;
+--background: #000000;
+--primary: #c00101;
+--secondary: #6b1d1d;
+--accent: #cac8c8;
 }
 
 body {
@@ -18,10 +18,19 @@ h1 {
 }
 
 h2{
-    color:var(--primary);
+    color:var(--secondary);
     font-family:"metal mania";
 } 
 
 h3{
-    color:var(--accent)
+    color:var(--accent);
+}
+
+li{
+    color:var(--secondary);
+    font-weight: bold;
+    font-size: large;
+}
+a:link{
+    color: goldenrod;
 }

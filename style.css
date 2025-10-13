@@ -2,8 +2,8 @@ html {
     --text: #b8b8b8;
     --background: #000000;
     --primary: #ffffff;
-    --secondary: #bbbbbb;
-    --accent: #80959e;
+    --accent: #678591;
+    --secondary: rgb(204, 232, 248);
 }
 
 * {
@@ -30,10 +30,10 @@ h1 {
 
 h2 {
     text-align: center;
-    border: 3px solid #c5c5c5;
     font-size: 75px;
     color: var(--secondary);
-    font-family: "metal mania";
+    font-family: "Trade Winds";
+    text-decoration: underline;
 
 }
 
@@ -60,6 +60,12 @@ a:visited {
     font-size: 20px;
     color: rgba(255, 255, 255, 0.952);
     text-decoration: none;
+}
+
+a:hover,
+a:hover h3 {
+    color: var(--secondary);
+    text-decoration: underline;
 }
 
 .flex {

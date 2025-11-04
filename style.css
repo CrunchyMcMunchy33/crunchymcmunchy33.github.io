@@ -4,6 +4,7 @@ html {
     --primary: #ffffff;
     --accent: #678591;
     --secondary: rgb(204, 232, 248);
+    --subtext: rgb(172, 222, 243);
 }
 
 * {
@@ -24,22 +25,22 @@ h1 {
     text-align: center;
     color: var(--primary);
     font-family: "metal mania";
-    font-size: 150px;
+    font-size: 300px;
 
 }
 
 h2 {
     text-align: center;
-    font-size: 75px;
+    font-size: 150px;
     color: var(--secondary);
     font-family: "Trade Winds";
-    text-decoration: underline;
+    
 
 }
 
 h3 {
     text-align: center;
-    font-size: 80px;
+    font-size: 100px;
     color: var(--accent);
 }
 
@@ -64,7 +65,13 @@ a:visited {
 
 a:hover,
 a:hover h3 {
-    color: var(--secondary);
+    color: var(--subtext);
+    text-decoration: underline;
+}
+
+a:hover,
+a:hover h2 {
+    color: var(--subtext);
     text-decoration: underline;
 }
 

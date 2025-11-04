@@ -13,7 +13,7 @@ html {
 }
 
 body {
-    font-size: 20px;
+    font-size: 50px;
     color: var(--text);
     background: VAR(--background);
     font-family: "texturina";
@@ -25,13 +25,13 @@ h1 {
     text-align: center;
     color: var(--primary);
     font-family: "metal mania";
-    font-size: 300px;
+    font-size: 500px;
 
 }
 
 h2 {
     text-align: center;
-    font-size: 150px;
+    font-size: 250px;
     color: var(--secondary);
     font-family: "Trade Winds";
     
@@ -40,12 +40,12 @@ h2 {
 
 h3 {
     text-align: center;
-    font-size: 100px;
+    font-size: 150px;
     color: var(--accent);
 }
 
 h4 {
-    font-size: 30px;
+    font-size: 50px;
     color: var(--accent);
     text-decoration: underline;
 }
@@ -53,12 +53,12 @@ h4 {
 li {
     color: var(--secondary);
     font-weight: bold;
-    font-size: 25px;
+    font-size: 50px;
 }
 
 a:link,
 a:visited {
-    font-size: 20px;
+    font-size: 50px;
     color: rgba(255, 255, 255, 0.952);
     text-decoration: none;
 }

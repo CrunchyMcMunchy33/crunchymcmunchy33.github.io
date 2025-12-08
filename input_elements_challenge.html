@@ -75,54 +75,66 @@
     </section>
 
     <script>
-        // --- PART 1 ---
-        const nameInput = document.getElementById("nameInput");
-        const ageInput = document.getElementById("ageInput");
-        const btnGreet = document.getElementById("btnGreet");
-        const greetingOutput = document.getElementById("greetingOutput");
+        var nameInput = document.getElementById("nameInput");
+        var ageInput = document.getElementById("ageInput");
+        var btnGreet = document.getElementById("btnGreet");
+        var greetingOutput = document.getElementById("greetingOutput");
 
-        btnGreet.addEventListener("click", () => {
-            const name = nameInput.value || "Friend";
-            const age = ageInput.value || "unknown";
-            
-            if (age < 13) {
-                greetingOutput.textContent = `Hello ${name}, you're just a kid!`;
-            } else {
-                greetingOutput.textContent = `Hello ${name}, you are ${age} years old!`;
+        function showGreeting() {
+            var name = nameInput.value;
+            var age = ageInput.value;
+
+            if (name === "") {
+                name = "Friend";
             }
-        });
 
-        // --- PART 2 ---
-        const colorInput = document.getElementById("colorInput");
-        const volumeInput = document.getElementById("volumeInput");
-        const colorOutput = document.getElementById("colorOutput");
+            if (age === "") {
+                age = "unknown";
+            }
 
-        function updateColorDisplay() {
-            const color = colorInput.value;
-            const volume = volumeInput.value;
-            
-            colorOutput.style.backgroundColor = color;
-            colorOutput.textContent = `Color: ${color}, Volume: ${volume}`;
+            if (age < 13) {
+                greetingOutput.textContent = "Hello " + name + ", you're just a kid!";
+            } else {
+                greetingOutput.textContent = "Hello " + name + ", you are " + age + " years old!";
+            }
         }
 
-        // Initialize display
+        btnGreet.addEventListener("click", showGreeting);
+
+        var colorInput = document.getElementById("colorInput");
+        var volumeInput = document.getElementById("volumeInput");
+        var colorOutput = document.getElementById("colorOutput");
+
+        function updateColorDisplay() {
+            var color = colorInput.value;
+            var volume = volumeInput.value;
+            
+            colorOutput.style.backgroundColor = color;
+            colorOutput.textContent = "Color: " + color + ", Volume: " + volume;
+        }
+
         updateColorDisplay();
 
-        // Update display when inputs change
         colorInput.addEventListener("input", updateColorDisplay);
         volumeInput.addEventListener("input", updateColorDisplay);
 
-        // --- PART 3 ---
-        const subscribeBox = document.getElementById("subscribeBox");
-        const btnSubmit = document.getElementById("btnSubmit");
-        const modeOutput = document.getElementById("modeOutput");
+        var subscribeBox = document.getElementById("subscribeBox");
+        var btnSubmit = document.getElementById("btnSubmit");
+        var modeOutput = document.getElementById("modeOutput");
 
-        btnSubmit.addEventListener("click", () => {
-            const selectedMode = document.querySelector('input[name="mode"]:checked').value;
-            const isSubscribed = subscribeBox.checked;
+        function showMode() {
+            var selectedMode = document.querySelector('input[name="mode"]:checked').value;
+            var isSubscribed = subscribeBox.checked;
             
-            modeOutput.textContent = `Mode: ${selectedMode}, Newsletter: ${isSubscribed ? "Subscribed" : "Not subscribed"}`;
-        });
+            var subscriptionText = "Not subscribed";
+            if (isSubscribed === true) {
+                subscriptionText = "Subscribed";
+            }
+            
+            modeOutput.textContent = "Mode: " + selectedMode + ", Newsletter: " + subscriptionText;
+        }
+
+        btnSubmit.addEventListener("click", showMode);
     </script>
 </body>
 

@@ -22,26 +22,87 @@
   </head>
 
   <body>
-    <h1>The Art of Music</h1>
-    <div class="h2v">
-      <h2>Take a small survey on underground music:</h2>
-    </div>
-    <a href="Survey.html"><h4>CLick Here for Survey</h4></a>
-    <h2>The Sound of the Future, Here Today</h2>
-    <h4>Click on the Names to learn more:</h4>
+    <header class="site-header">
+      <nav class="site-nav container">
+        <a class="logo" href="/index.html">The Art of Music</a>
+        <ul class="nav-list">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="#artists">Artists</a></li>
+          <li><a href="/Survey.html">Survey</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <a href="/2Hollis/2habout.html">
-      <h3>2HOLLIS</h3>
-    </a>
+    <main class="container">
+      <section class="hero">
+        <h1>The Art of Music</h1>
+        <p class="tagline">The Sound of the Future, Here Today</p>
+        <p class="lead">Take a small survey on underground music.</p>
+        <a class="cta" href="/Survey.html">Click Here for Survey</a>
+      </section>
 
-    <a href="/prodwithflavor/pwabout.html">
-      <h3>Prodwithflavor</h3>
-    </a>
-    <h3>Feng</h3>
-    <a href="/fakemink/fmabout.html">
-      <h3>Fake Mink</h3>
-    </a>
-    <h3>NETTSPEND</h3>
-    <br />
+      <section id="artists" class="artists-section">
+        <h2>Click on the names to learn more</h2>
+
+        <div class="artist-grid">
+          <article class="artist-card">
+            <a href="/2Hollis/2habout.html">
+              <div
+                class="card-media"
+                style="background-image: url('/videos/2hollismog.jpg')"
+              ></div>
+              <h3>2HOLLIS</h3>
+              <p class="card-blurb">
+                A genre-defying artist blending lo-fi aesthetics and trap
+                rhythms.
+              </p>
+            </a>
+          </article>
+
+          <article class="artist-card">
+            <a href="/feng/fengabout.html">
+              <div
+                class="card-media"
+                style="background-image: url('/videos/feng.jpg')"
+              ></div>
+              <h3>Feng</h3>
+              <p class="card-blurb">
+                Intimate lyricism and minimalist production, built for live
+                connection.
+              </p>
+            </a>
+          </article>
+
+          <article class="artist-card">
+            <a href="/fakemink/fmabout.html">
+              <div
+                class="card-media"
+                style="background-image: url('/videos/fakemink.jpg')"
+              ></div>
+              <h3>Fake Mink</h3>
+              <p class="card-blurb">
+                UK underground rapper blending grime roots with experimental
+                production.
+              </p>
+            </a>
+          </article>
+
+          <article class="artist-card">
+            <a href="/nettspend/nettspendabout.html">
+              <div
+                class="card-media"
+                style="background-image: url('/videos/nettie.jpg')"
+              ></div>
+              <h3>NETTSPEND</h3>
+              <p class="card-blurb">
+                Story-driven rap with cinematic production and grassroots
+                support.
+              </p>
+            </a>
+          </article>
+        </div>
+      </section>
+    </main>
+
   </body>
 </html>

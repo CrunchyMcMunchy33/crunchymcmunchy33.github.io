@@ -1,156 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Art of Music</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap"
-        rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Metal+Mania&family=Texturina:ital,opsz,wght@0,12..72,100..900;1,12..72,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="Survey.css" />
     <style>
-     
-        #OtherArtist {
-            display: none; 
-            margin-top: 5px;
-            width: 100%;
-            box-sizing: border-box; 
-        }
+      #OtherArtist {
+        display: none;
+        margin-top: 5px;
+        width: 100%;
+        box-sizing: border-box;
+      }
     </style>
-</head>
+  </head>
 
-<body>
-    <a href="index.html">Home</a>
+  <body>
+    <div class="homebtn"></div>
+      <a href="index.html">Home</a>
+    </div>
     <div id="quiz-div" class="widget-container">
-        <h1>Music Survey</h1>
+      <h1>Music Survey</h1>
 
-        <form id="surveyForm">
-            <div class="form-selection">
-                <h2>Listener Info</h2>
-                <label for="ListenerName">Your Name:</label>
-                <input type="text" id="ListenerName" required> <br>
+      <form id="surveyForm">
+        <div class="form-selection">
+          <h2>Listener Info</h2>
+          <label for="ListenerName">Your Name:</label>
+          <input type="text" id="ListenerName" required /> <br />
 
-                <label for="PlatformName">Your Streaming Platform:</label>
-                <input type="text" id="PlatformName" required> <br>
+          <label for="PlatformName">Your Streaming Platform:</label>
+          <input type="text" id="PlatformName" required /> <br />
 
-                <label for="FavoriteArtist">Your Favorite Artist:</label>
-                <select id="FavoriteArtist">
-                    <option value="2Hollis">2Hollis</option>
-                    <option value="Nettspend">Nettspend</option>
-                    <option value="Osamason">Osamason</option>
-                    <option value="XavierSoBased">XavierSoBased</option>
-                    <option value="Fakemink">Fakemink</option>
-                    <option value="other">Other</option>
-                </select>
-               
-                <input type="text" id="OtherArtist">
-            </div>
+          <label for="FavoriteArtist">Your Favorite Artist:</label>
+          <select id="FavoriteArtist">
+            <option value="2Hollis">2Hollis</option>
+            <option value="Nettspend">Nettspend</option>
+            <option value="Osamason">Osamason</option>
+            <option value="XavierSoBased">XavierSoBased</option>
+            <option value="Fakemink">Fakemink</option>
+            <option value="other">Other</option>
+          </select>
 
-            <div class="form-submission">
-                <h2>Music Quiz</h2>
-                <h3>Which artist has the most monthly listeners?</h3>
-                <label>
-                    <input type="radio" name="q1" value="2Hollis" required />2Hollis <br>
-                    <input type="radio" name="q1" value="Nettspend" />Nettspend <br>
-                    <input type="radio" name="q1" value="Osamason" />Osamason <br>
-                    <input type="radio" name="q1" value="XavierSoBased" />XavierSoBased <br>
-                    <input type="radio" name="q1" value="Fakemink" />Fakemink <br>
-                </label>
+          <input type="text" id="OtherArtist" />
+        </div>
 
-                <h3>What type of music does 2hollis make? (Select all that apply)</h3>
-                <label>
-                    <input type="checkbox" name="q2" value="HipHop" />HipHop <br>
-                    <input type="checkbox" name="q2" value="Pop" />Pop <br>
-                    <input type="checkbox" name="q2" value="Edm" />Edm <br>
-                    <input type="checkbox" name="q2" value="Rap" />Rap <br>
-                    <input type="checkbox" name="q2" value="House" />House <br>
-                </label>
+        <div class="form-submission">
+          <h2>Music Quiz</h2>
+          <h3>Which artist has the most monthly listeners?</h3>
+          <label>
+            <input type="radio" name="q1" value="2Hollis" required />2Hollis
+            <br />
+            <input type="radio" name="q1" value="Nettspend" />Nettspend <br />
+            <input type="radio" name="q1" value="Osamason" />Osamason <br />
+            <input type="radio" name="q1" value="XavierSoBased" />XavierSoBased
+            <br />
+            <input type="radio" name="q1" value="Fakemink" />Fakemink <br />
+          </label>
 
-                <h3>Why is 2hollis the best artist of all time?</h3>
-                <label>
-                    <input type="radio" name="q3" value="Because hes hot" required /> because hes hot <br>
-                    <input type="radio" name="q3" value="Same as answer a" /> Same as answer a <br>
-                    <input type="radio" name="q3" value="Same as answer b" /> Same as answer b <br>
-                    <input type="radio" name="q3" value="All of the above" /> All of the above <br>
-                </label>
+          <h3>What type of music does 2hollis make? (Select all that apply)</h3>
+          <label>
+            <input type="checkbox" name="q2" value="HipHop" />Country <br />
+            <input type="checkbox" name="q2" value="Pop" />Pop <br />
+            <input type="checkbox" name="q2" value="Edm" />Edm <br />
+            <input type="checkbox" name="q2" value="Rap" />Rap <br />
+            <input type="checkbox" name="q2" value="House" />Rock <br />
+          </label>
 
-                <button type="button" id="submitBtn">Submit</button>
-            </div>
-        </form>
+          <h3>Which artist released the album "Star" in 2025?</h3>
+          <label>
+            <input type="radio" name="q3" value="FakeMink" required /> FakeMink
+            <br />
+            <input type="radio" name="q3" value="Feng" /> Feng <br />
+            <input type="radio" name="q3" value="Nettspend" /> NetTSpend <br />
+            <input type="radio" name="q3" value="2Hollis" /> 2hollis <br />
+          </label>
+
+          <button type="button" id="submitBtn">Submit</button>
+        </div>
+      </form>
     </div>
 
-    <div id="results-div" class="widget-container" style="display:none;">
-    </div>
+    <div id="results-div" class="widget-container" style="display: none"></div>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function () {
-           
-            const artistSelect = document.getElementById('FavoriteArtist');
-            const otherArtistInput = document.getElementById('OtherArtist');
+      document.addEventListener("DOMContentLoaded", function () {
+        const artistSelect = document.getElementById("FavoriteArtist");
+        const otherArtistInput = document.getElementById("OtherArtist");
 
-            artistSelect.addEventListener('change', function () {
-                if (this.value === 'other') {
-                    otherArtistInput.style.display = 'block';
-                } else {
-                    otherArtistInput.style.display = 'none';
-                }
-            });
-
-
-        
-            const submitButton = document.getElementById('submitBtn');
-
-            submitButton.addEventListener('click', function () {
-                var name = document.getElementById('ListenerName').value;
-                var platform = document.getElementById('PlatformName').value;
-                var artist = document.getElementById('FavoriteArtist').value;
-                
-           
-                if (artist === 'other') {
-                    artist = document.getElementById('OtherArtist').value || "Other (unspecified)";
-                }
-
-                var answer1 = document.querySelector('input[name="q1"]:checked').value;
-
-                var q2Checkboxes = document.querySelectorAll('input[name="q2"]:checked');
-                var userAnswersQ2 = Array.from(q2Checkboxes).map(cb => cb.value);
-
-                var answer3 = document.querySelector('input[name="q3"]:checked').value;
-
-                var correctQ1 = "2Hollis";
-                var correctQ2 = ["Rap", "Edm"];
-
-                var message = "<h2>Hi " + name + "!</h2>";
-                message += "<p>You like listening to " + artist + " on " + platform + ".</p>";
-                message += "<h3>Quiz Results</h3>";
-
-                if (answer1 == correctQ1) {
-                    message += "<p>Question 1: 2Hollis is Correct!</p>";
-                } else {
-                    message += "<p>Question 1: Wrong. The correct answer was " + correctQ1 + ".</p>";
-                }
-
-                var isQ2Correct = (userAnswersQ2.sort().toString() === correctQ2.sort().toString());
-                if (isQ2Correct) {
-                    message += "<p>Question 2: Rap and Edm are Correct!</p>";
-                } else {
-                    message += "<p>Question 2: Wrong. The correct answers were " + correctQ2.join(" and ") + ".</p>";
-                }
-
-                message += "<p>Question 3: You answered '" + answer3 + "'. Trick question, no wrong answers!</p>";
-
-                document.getElementById('quiz-div').style.display = 'none';
-                var resultsDiv = document.getElementById('results-div');
-                resultsDiv.innerHTML = message;
-                resultsDiv.style.display = 'block';
-            });
+        artistSelect.addEventListener("change", function () {
+          if (this.value === "other") {
+            otherArtistInput.style.display = "block";
+          } else {
+            otherArtistInput.style.display = "none";
+          }
         });
-    </script>
-</body>
 
+        const submitButton = document.getElementById("submitBtn");
+
+        submitButton.addEventListener("click", function () {
+          var name = document.getElementById("ListenerName").value;
+          var platform = document.getElementById("PlatformName").value;
+          var artist = document.getElementById("FavoriteArtist").value;
+
+          if (artist === "other") {
+            artist =
+              document.getElementById("OtherArtist").value ||
+              "Other (unspecified)";
+          }
+
+          var answer1 = document.querySelector(
+            'input[name="q1"]:checked'
+          ).value;
+
+          var q2Checkboxes = document.querySelectorAll(
+            'input[name="q2"]:checked'
+          );
+          var userAnswersQ2 = Array.from(q2Checkboxes).map((cb) => cb.value);
+
+          var answer3 = document.querySelector(
+            'input[name="q3"]:checked'
+          ).value;
+
+          var correctQ1 = "2Hollis";
+          var correctQ2 = ["Rap", "Edm"];
+          var correctQ3 = "2Hollis";
+
+          var message = "<h2>Hi " + name + "!</h2>";
+          message +=
+            "<p>You like listening to " + artist + " on " + platform + ".</p>";
+          message += "<h3>Quiz Results</h3>";
+
+          if (answer1 == correctQ1) {
+            message += "<p>Question 1: 2Hollis is Correct!</p>";
+          } else {
+            message +=
+              "<p>Question 1: Wrong. The correct answer was " +
+              correctQ1 +
+              ".</p>";
+          }
+
+          var isQ2Correct =
+            userAnswersQ2.sort().toString() === correctQ2.sort().toString();
+          if (isQ2Correct) {
+            message += "<p>Question 2: Rap and Edm are Correct!</p>";
+          } else {
+            message +=
+              "<p>Question 2: Wrong. The correct answers were " +
+              correctQ2.join(" and ") +
+              ".</p>";
+          }
+
+          if (answer3 == correctQ3) {
+            message += "<p>Question 3: Correct!</p>";
+          } else {
+            message +=
+              "<p>Question 3: Wrong. The correct answer was " +
+              correctQ3 +
+              ".</p>";
+          }
+
+          document.getElementById("quiz-div").style.display = "none";
+          var resultsDiv = document.getElementById("results-div");
+          resultsDiv.innerHTML = message;
+          resultsDiv.style.display = "block";
+        });
+      });
+    </script>
+  </body>
 </html>

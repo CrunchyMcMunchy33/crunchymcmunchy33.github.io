@@ -1,3 +1,14 @@
 body{
     text-align: center;
+    position: relative;
+}
+
+/* Put the first (Home) link at the top-left without affecting centered content */
+body > a:first-of-type{
+    text-align: left;
+}
+
+/* Ensure other links remain centered */
+body > a:not(:first-of-type){
+    text-align: center;
 }

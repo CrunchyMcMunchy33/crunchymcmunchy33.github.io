@@ -12,3 +12,13 @@ body > a:first-of-type{
 body > a:not(:first-of-type){
     text-align: center;
 }
+
+h1 {
+    font-size: 150px;
+}
+h2 {
+    font-size: 80px;
+}
+h3 {
+    font-size: 60px;
+}
